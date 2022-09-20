@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ccc;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+#principal{
+width: 100%;
+margin: 0px auto;
+}
+
+/* Menu */ 
+
+#menu{
+    height: 100PX;
+    padding-top: 0;
+    background: #012030;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+   
+}
+
+.logo img{
+    width: 80px;
+    color: #fff;
+    height: 80px;
+    margin-left: 20em;
+    
+}
+
+.logo span{
+    font-size: 36px;
+    color: #fff; 
+}
+
+/* Navegação */ 
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul{
+    float: left;
+}
+
+#menu ul li{
+    float: left;
+  
+}
+
+#navegacao li a{
+    text-decoration: none;
+    padding: 1em 2em;
+    display: inline-block;
+    font-size: 1em;
+    color: #ccc;
+    background: #012030;
+    
+}
+
+#navegacao li a:hover{
+    color: rgb(138, 223, 238);
+}
+
+#navegacao li a:active{
+    color: red;
+}
+
+/* Conteúdo */
+
+#conteudoprincipal{
+    width: 100%;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    margin: auto;
+}
+#conteudo{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+#postagem {
+    width: 80%;
+    padding: 25px;
+    margin: auto;
+    border: 7px double #012030;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#postagem img{
+    width: 50%;
+    float: right;
+    border-radius: 20%;
+}
+
+.paragrafo{
+    width: 40%;
+    float: left;
+    margin-top: 3em;
+    font-size: large;
+    font-weight: lighter;
+}
+
+/* Postagem 2 */ 
+
+#postagem1{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+#postagem1 img{
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     border: 6px solid #020657;
+}
+
+#postagem1 p{
+    width: 200px;
+    height: 200px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+.titulo{
+    text-align: center;
+    border-bottom: 10px groove  #9599E2;
+    width: 500px;
+    margin: auto;
+    border-radius: 40%;
+}
+
+/* Rodapé */
+
+#rodape{
+    background: #012030;
+    width: 95.5%;
+    height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 2em;
+
+
+}
+
+/* Media Query */
+
+@media (max-width: 770px) {
+
+    #postagem img{
+        float: left;
+        width: 100%;
+    }
+
+    .paragrafo{
+        float: none;
+        width: 100%; 
+    }
+
+    #menu{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.5;
+        clear: both;
+        height: 300px;
+        justify-content: center;
+    }
+
+    #menu ul li{
+        float: none;   
+    }
+
+    #menu ul li a{
+        float: none;
+        font-size: 15px;
+        
+    }
+
+    .logo{
+        margin: 0;
+    }
+
+    .logo img{
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .logo span{
+        font-size: 20px;
+    }
+
+    .titulo{
+        width: 30%;
+    }
+
+    #postagem1{
+        flex-wrap: wrap;
+    }
+
+    #rodape{
+        width: 95.5%;
+        clear: both;
+    }
+
+    
+}
+
